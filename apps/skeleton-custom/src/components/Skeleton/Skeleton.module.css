@@ -10,12 +10,15 @@
     var(--color__gray-200) 66%
   );
   background-size: 300%;
-  color: transparent;
   -webkit-text-fill-color: transparent;
-  box-decoration-break: clone;
   text-box-edge: inherit;
   text-box-trim: inherit;
   animation: shimmer 2s infinite ease-in-out;
+}
+
+.skeleton.text {
+  border-radius: var(--border-radius__md);
+  box-decoration-break: clone;
 }
 
 @keyframes shimmer {

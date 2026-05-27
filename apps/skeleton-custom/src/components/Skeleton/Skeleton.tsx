@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import {
   cloneElement,
   type ReactElement,
@@ -7,7 +8,6 @@ import {
   Children,
   version as reactVersion,
 } from "react";
-import { mergeProps } from "react-aria";
 
 import { SkeletonContext } from "./context";
 import styles from "./Skeleton.module.css";
@@ -34,12 +34,16 @@ export function Skeleton({
     | (ReactElement<{
         children?: ReactNode;
         className?: string;
+        src?: string;
+        poster?: string;
+        controls?: boolean;
         inert?: boolean | "true";
         ref?: Ref<HTMLElement>;
       }> & {
         ref?: Ref<HTMLElement>;
       })
-    | string | number;
+    | string
+    | number;
 }) {
   const isLoading = useContext(SkeletonContext);
 
@@ -48,7 +52,7 @@ export function Skeleton({
   }
 
   if (typeof children === "string" || typeof children === "number") {
-    return <>{isLoading ? <span className={styles.skeleton}>{children}</span> : children}</>;
+    return <>{isLoading ? <span className={clsx(styles.skeleton, styles.text)}>{children}</span> : children}</>;
   }
 
   const child = Children.only(children);
@@ -60,23 +64,23 @@ export function Skeleton({
       {isLoading
         ? cloneElement(
             child,
-            mergeProps(child.props, {
+            {
               ref,
               src: child.type === "img" ? transparentGif : undefined,
               poster: child.type === "video" ? transparentGif : undefined,
               controls: child.type === "video" ? false : undefined,
               inert: inertValue(true),
-              className: lines ? undefined : styles.skeleton,
-            }),
-          lines ? (
-            <SkeletonLines lines={lines} />
-          ) : grandchildren ? (
-            typeof grandchildren === "string" && !grandchildren.trim() ? (
-              <>&nbsp;</>
-            ) : (
-              grandchildren
-            )
-          ) : null,
+              className: lines ? child.props.className : clsx(child.props.className, styles.skeleton),
+            },
+            lines ? (
+              <SkeletonLines lines={lines} />
+            ) : grandchildren ? (
+              typeof grandchildren === "string" && !grandchildren.trim() ? (
+                <>&nbsp;</>
+              ) : (
+                grandchildren
+              )
+            ) : null,
           )
         : child}
     </>

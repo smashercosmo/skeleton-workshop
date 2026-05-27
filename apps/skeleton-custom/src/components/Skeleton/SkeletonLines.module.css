@@ -3,4 +3,5 @@
   text-box-edge: inherit;
   text-box-trim: inherit;
   width: 100%;
+  border-radius: var(--border-radius__md);
 }

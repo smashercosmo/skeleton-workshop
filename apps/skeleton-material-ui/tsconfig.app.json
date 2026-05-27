@@ -5,9 +5,8 @@
     "tsBuildInfoFile": "./dist/tsconfig.app.tsbuildinfo",
     "jsx": "react-jsx",
     "lib": ["es2022", "dom", "dom.iterable"],
-    "types": ["vite/client"],
-    "resolveJsonModule": true,
+    "types": ["vite/client"]
   },
-  "exclude": ["./dist", ".storybook/main.ts", "./**/*.stories.*", "./vite.config.ts", ".storybook/preview.tsx"],
-  "include": [".", "./src/**/*.json"]
+  "exclude": ["./dist", "./vite.config.ts"],
+  "include": ["."]
 }
