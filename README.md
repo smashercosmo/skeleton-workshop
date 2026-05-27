@@ -12,3 +12,7 @@ Skeletons reserve space for incoming content, which prevents the UI from jumping
 
 A spinner only says “loading.”
 A skeleton says “your profile card/article/feed is loading here.”
+
+You can find skeleton components
+
+I split the different implementations of the skeleton component into several groups based on two criteria, which are "automation level" and "execution phase"
