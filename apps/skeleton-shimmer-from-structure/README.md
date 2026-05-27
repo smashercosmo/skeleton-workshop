@@ -1,0 +1,4 @@
+- pnpm i @shimmer-from-structure/react --filter=@smashercosmo/skeleton-shimmer-from-structure
+- import { Shimmer } from "@shimmer-from-structure/react";
+- \<Shimmer loading={isLoading} backgroundColor="rgba(0,0,0,0.05)">
+- pnpm dev --filter=@smashercosmo/skeleton-shimmer-from-structure

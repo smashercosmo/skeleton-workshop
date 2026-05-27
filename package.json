@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "storybook": "turbo run storybook",
+    "typecheck": "turbo run typecheck",
+    "format": "oxfmt",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "oxfmt": "catalog:formatting",
+    "tsdown": "^0.21.7",
+    "turbo": "^2.9.1",
+    "typescript": "catalog:typescript",
+    "vitest": "catalog:testing"
+  },
+  "packageManager": "pnpm@10.28.0"
+}

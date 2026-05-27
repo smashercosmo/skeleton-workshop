@@ -1,0 +1,18 @@
+packages:
+  - packages/*
+  - apps/*
+
+catalogs:
+  formatting:
+    oxfmt: ^0.43.0
+  testing:
+    vitest: ^4.1.2
+  types:
+    '@types/node': ^24.12.0
+  typescript:
+    typescript: ^6.0.2
+
+linkWorkspacePackages: true
+
+onlyBuiltDependencies:
+  - esbuild

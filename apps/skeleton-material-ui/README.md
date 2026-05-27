@@ -1,0 +1,2 @@
+- pnpm i @mui/material @mui/styled-engine-sc styled-components --filter=@smashercosmo/skeleton-material-ui
+- pnpm dev --filter=@smashercosmo/skeleton-material-ui

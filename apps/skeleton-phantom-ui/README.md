@@ -1,0 +1,5 @@
+- pnpm i @aejkatappaja/phantom-ui --filter=@smashercosmo/skeleton-phantom-ui;
+- import "@aejkatappaja/phantom-ui";
+- \<phantom-ui loading animation="pulse">;
+- pnpx @aejkatappaja/phantom-ui init;
+- pnpm dev --filter=@smashercosmo/skeleton-phantom-ui

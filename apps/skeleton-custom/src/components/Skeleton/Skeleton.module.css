@@ -1,0 +1,28 @@
+.skeleton * {
+  visibility: hidden;
+}
+
+.skeleton {
+  background-image: linear-gradient(
+    to right,
+    var(--color__gray-200) 33%,
+    var(--color__gray-50),
+    var(--color__gray-200) 66%
+  );
+  background-size: 300%;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  text-box-edge: inherit;
+  text-box-trim: inherit;
+  animation: shimmer 2s infinite ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position-x: 100%;
+  }
+  100% {
+    background-position-x: 0;
+  }
+}

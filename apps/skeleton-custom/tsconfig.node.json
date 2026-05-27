@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./dist/tsconfig.node.tsbuildinfo",
+    "types": ["node"],
+    "lib": ["es2022"]
+  },
+  "include": ["./vite.config.ts", ".storybook/main.ts"]
+}

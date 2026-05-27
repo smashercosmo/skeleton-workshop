@@ -1,0 +1,6 @@
+- pnpm i boneyard-js --filter=@smashercosmo/skeleton-boneyard;
+- import { Skeleton } from "boneyard-js/react";
+- \<Skeleton loading={isLoading} name="card">;
+- pnpm dev --filter=@smashercosmo/skeleton-boneyard;
+- npx boneyard-js build http://localhost:5173;
+- import './bones/registry';
