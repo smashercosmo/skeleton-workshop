@@ -1,6 +1,7 @@
 import { Card } from "@components/Card/Card";
 import { SkeletonProvider } from "@components/Skeleton";
 import { useState } from "react";
+// import "@components/Skeleton/Skeleton.web"
 
 export function App() {
   const [isLoading, setIsLoading] = useState(false);

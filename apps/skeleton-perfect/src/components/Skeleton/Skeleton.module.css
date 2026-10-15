@@ -1,4 +1,6 @@
-.skeleton * {
+.skeleton *,
+.skeleton *::before,
+.skeleton *::after {
   visibility: hidden;
 }
 
