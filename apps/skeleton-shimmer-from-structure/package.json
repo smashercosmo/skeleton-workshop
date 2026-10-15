@@ -10,7 +10,7 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@shimmer-from-structure/react": "^2.4.6",
+    "@shimmer-from-structure/react": "catalog:ui",
     "react": "catalog:react",
     "react-dom": "catalog:react"
   },

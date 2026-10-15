@@ -1,14 +1,12 @@
 import babel from "@rolldown/plugin-babel";
 import react, { reactCompilerPreset } from "@vitejs/plugin-react";
+import { boneyardPlugin } from "boneyard-js/vite";
 import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [
-      react(),
-      babel({ presets: [reactCompilerPreset()] }),
-    ],
+    plugins: [boneyardPlugin(), react(), babel({ presets: [reactCompilerPreset()] })],
     resolve: {
       tsconfigPaths: true,
     },

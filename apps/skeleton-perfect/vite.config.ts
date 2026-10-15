@@ -5,10 +5,7 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [
-      react(),
-      babel({ presets: [reactCompilerPreset()] }),
-    ],
+    plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
     resolve: {
       tsconfigPaths: true,
     },

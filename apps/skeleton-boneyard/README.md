@@ -11,12 +11,13 @@
 
 ## Upsides
 
-- Skeletons are automatically generated
+- Skeletons are automatically generated (has `watch` mode and also Vite plugin)
 - Faster initial loading as all the measurements are performed during the build time, though library still uses ResizeObserver to update skeletons when layout changes
 - Skeleton styles are completely isolated and don't interfere with the rest of the app
+- Has adapters for all major frameworks
 
 ## Downsides
 
-- Skeletons need to be regenerated when a component's implementation changes
 - Skeletons for text blocks are rendered as solid gray boxes
+- It's all or nothing: you can't exclude certain ui elements from being replaced with skeletons
 - Some rendering issues: for example, in the current demo the root container background disappears when the skeleton is rendered

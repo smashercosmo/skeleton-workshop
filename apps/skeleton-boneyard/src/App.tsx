@@ -2,7 +2,7 @@ import { Card } from "@components/Card/Card";
 import { Skeleton } from "boneyard-js/react";
 import { useState } from "react";
 
-import "./bones/registry";
+// import "./bones/registry";
 
 export function App() {
   const [isLoading, setIsLoading] = useState(false);

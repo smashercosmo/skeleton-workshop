@@ -1,7 +1,7 @@
 .text {
   display: inline-block;
-  text-box-edge: inherit;
-  text-box-trim: inherit;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
   width: 100%;
   border-radius: var(--border-radius__md);
 }

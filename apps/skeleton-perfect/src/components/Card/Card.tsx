@@ -35,11 +35,11 @@ export function Card({ data }: Props) {
             <h3 className={styles.header}>{data?.header ?? ""}</h3>
           </Skeleton>
           {/* First way to render skeleton for a text block. Upside: it doesn't require placeholder text. */}
-          {/* Downsides: it doesn't wrap and looks a bit less natural, requires setting `text-box-edge` and `text-box-trim` in CSS */}
+          {/* Downsides: it doesn't wrap and looks a bit less natural. */}
           <Skeleton lines={4}>
             <p className={styles.paragraph}>{data?.paragraph1 ?? ""}</p>
           </Skeleton>
-          {/* Second way to render skeleton for a text block. Upside: it wraps and looks more natural, doesn't require any additional css. */}
+          {/* Second way to render skeleton for a text block. Upside: it wraps and looks more natural. */}
           {/* Downsides: needs a placeholder text. */}
           <p className={styles.paragraph}>
             <Skeleton>

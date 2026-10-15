@@ -1,6 +1,6 @@
 .root {
   display: flex;
-  background-color: var(--color__blue-50);
+  background-color: #eff6ff;
   padding: var(--space__xl);
   gap: var(--space__3xl);
   border-radius: var(--border-radius__xl);
@@ -33,20 +33,16 @@
 
 .header {
   margin: 0;
-  color: var(--color__gray-800);
+  color: #1e2938;
   font-size: var(--font-size__3xl);
-  line-height: var(--line-height__3xl);
+  line-height: var(--line-height__xl);
   font-weight: var(--font-weight__bold);
-  text-box-edge: cap alphabetic;
-  text-box-trim: trim-both;
 }
 
 .paragraph {
   margin: 0;
-  color: var(--color__gray-700);
+  color: #364153;
   font-size: var(--font-size__lg);
   line-height: var(--line-height__lg);
   font-weight: var(--font-weight__medium);
-  text-box-edge: cap alphabetic;
-  text-box-trim: trim-both;
 }

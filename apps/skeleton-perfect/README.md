@@ -8,4 +8,4 @@
 
 ## Downsides
 
-- A looooot of manual work is required
+- Some manual work is required

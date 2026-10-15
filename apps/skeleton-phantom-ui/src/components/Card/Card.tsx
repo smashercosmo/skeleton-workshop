@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 
-export function Card() {
+export function Card({ isLoading = false }: { isLoading?: boolean }) {
   return (
     <div>
       <div className={styles.root}>
@@ -17,11 +17,19 @@ export function Card() {
             <br />
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h3>
-          <p className={styles.paragraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
-          </p>
+          {isLoading ? (
+            <p className={styles.paragraph} data-shimmer-ignore>
+              <phantom-ui loading={isLoading} count={5} animation="pulse">
+                <span className={styles.line}>&nbsp;</span>
+              </phantom-ui>
+            </p>
+          ) : (
+            <p className={styles.paragraph}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+          )}
         </div>
       </div>
     </div>

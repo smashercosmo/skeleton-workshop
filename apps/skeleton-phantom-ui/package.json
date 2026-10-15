@@ -10,7 +10,7 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
-    "@aejkatappaja/phantom-ui": "^0.10.1",
+    "@aejkatappaja/phantom-ui": "catalog:ui",
     "react": "catalog:react",
     "react-dom": "catalog:react"
   },

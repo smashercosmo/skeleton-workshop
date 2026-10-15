@@ -1,0 +1,39 @@
+@layer tokens {
+  :where(:root, :host) {
+    --space__xs: 0.25rem;
+    --space__sm: 0.5rem;
+    --space__md: 0.75rem;
+    --space__lg: 1rem;
+    --space__xl: 1.5rem;
+    --space__2xl: 2rem;
+    --space__3xl: 2.5rem;
+    --space__4xl: 3rem;
+    --space__5xl: 4rem;
+
+    --font-size__xs: 0.625rem;
+    --font-size__sm: 0.75rem;
+    --font-size__md: 0.875rem;
+    --font-size__lg: 1rem;
+    --font-size__xl: 1.25rem;
+    --font-size__2xl: 1.5rem;
+    --font-size__3xl: 2rem;
+
+    --line-height__none: 1;
+    --line-height__3xs: 0.75rem;
+    --line-height__2xs: 0.875rem;
+    --line-height__xs: 1.125rem;
+    --line-height__sm: 1.25rem;
+    --line-height__md: 1.375rem;
+    --line-height__lg: 1.5rem;
+    --line-height__xl: 2.25rem;
+
+    --font-weight__medium: 500;
+    --font-weight__bold: 700;
+
+    --border-radius__xs: 0.1875rem;
+    --border-radius__sm: 0.25rem;
+    --border-radius__md: 0.375rem;
+    --border-radius__lg: 0.5rem;
+    --border-radius__xl: 0.75rem;
+  }
+}

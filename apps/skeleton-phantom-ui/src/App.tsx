@@ -8,7 +8,7 @@ export function App() {
     <div>
       <button onClick={() => setIsLoading(currentIsLoading => !currentIsLoading)}>Toggle loading</button>
       <phantom-ui loading={isLoading} animation="pulse">
-        <Card />
+        <Card isLoading={isLoading} />
       </phantom-ui>
     </div>
   );

@@ -16,4 +16,6 @@
 ## Downsides
 
 - Skeletons for text blocks are rendered as solid gray boxes
-- Might have performance implications, as all the measurements happen in runtime and `getBoundingClientRect` calls will cause reflows
+- Often needs placeholder data for proper measurements
+- Might have performance implications, as all the measurements happen at runtime and `getBoundingClientRect` calls will cause reflows
+- It's all or nothing: you can't exclude certain ui elements from being replaced with skeletons
